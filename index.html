@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Automóveis</title>
+    <style>
+        /* Estilos CSS personalizados podem ser adicionados aqui */
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Cadastro de Automóveis(Caio Pereira)</h1>
+        <p>Preencha as informações abaixo:</p>
+        <br>
+    </div>
+    <form>
+        <fieldset>
+            <legend>Informações do Veículo</legend>
+            <div>
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" placeholder="Digite a marca" required>
+            </div>
+            <div>
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Digite o modelo" required>
+            </div>
+            <div>
+                <label for="ano">Ano de Fabricação:</label>
+                <input type="number" id="ano" name="ano" placeholder="Ano de fabricação" required>
+            </div>
+            <div>
+                <label for="cor">Cor:</label>
+                <input type="color" id="cor" name="cor">
+            </div>
+            <div>
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" name="preco" step="0.01" placeholder="Preço em R$" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Características</legend>
+            <div>
+                <label for="combustivel">Combustível:</label>
+                <select id="combustivel" name="combustivel" required>
+                    <option value="gasolina">Gasolina</option>
+                    <option value="alcool">Álcool</option>
+                    <option value="diesel">Diesel</option>
+                </select>
+            </div>
+            <div>
+                <label for="tracao">Tração:</label>
+                <input type="radio" id="tracao-2wd" name="tracao" value="2WD">
+                <label for="tracao-2wd">2WD</label>
+                <input type="radio" id="tracao-4wd" name="tracao" value="4WD">
+                <label for="tracao-4wd">4WD</label>
+            </div>
+            <div>
+                <label for="extras">Extras:</label>
+                <input type="checkbox" id="ar-condicionado" name="extras" value="ar-condicionado">
+                <label for="ar-condicionado">Ar-Condicionado</label>
+                <input type="checkbox" id="vidros-eletricos" name="extras" value="vidros-eletricos">
+                <label for="vidros-eletricos">Vidros Elétricos</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+    <HR>
+    <h2>Digite suas informãoes para entramos em contato</h2>
+    <table border="1">
+        <tr bgcolor="#CCC">
+            <td>Nome</td>
+            <td>E-mail</td>
+            <td>Cidade</td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Digite seu Nome"</td>
+            <td><input type="text" placeholder="Digite seu E-mail"</td>
+            <td><input type="text" placeholder="Cidade"</td>
+        </tr>
+
+    </table>   
+</body>
+</html>
